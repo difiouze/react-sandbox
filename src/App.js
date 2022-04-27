@@ -1,6 +1,7 @@
 import { fetchProducts } from "./services/storefront";
 import { useState, useEffect } from "react";
 import Product from "./components/Product";
+import Spinner from 'react-bootstrap/Spinner'
 import "./App.css";
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         </select>
 
         <div className="card-container">
-          {productsList.map((product, key) => (
+          {productsList.length >0 ? productsList.map((product, key) => (
             <Product
               key={product.id}
               name={product.title}
@@ -43,7 +44,10 @@ function App() {
               description={product.description}
               price={product.price}
             />
-          ))}
+          ))
+        : <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>}
         </div>
         
       </div>

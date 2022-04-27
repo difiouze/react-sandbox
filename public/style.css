@@ -1,0 +1,45 @@
+.top-menu {
+  background-color: red;
+}
+
+.top-menu__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.usernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.usernav li {
+  list-style: none;
+}
+
+.usernav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.referencement__inner {
+  text-align: center;
+}
+
+.referencement__inner h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
